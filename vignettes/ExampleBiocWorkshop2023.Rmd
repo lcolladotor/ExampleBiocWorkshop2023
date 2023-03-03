@@ -41,6 +41,7 @@ bib <- c(
     R = citation(),
     BiocStyle = citation("BiocStyle")[1],
     knitr = citation("knitr")[1],
+    limma = citation("limma")[1],
     RefManageR = citation("RefManageR")[1],
     rmarkdown = citation("rmarkdown")[1],
     sessioninfo = citation("sessioninfo")[1],
@@ -97,6 +98,9 @@ Here is an example of you can cite your package inside the vignette:
 
 * `r Biocpkg("ExampleBiocWorkshop2023")` `r Citep(bib[["ExampleBiocWorkshop2023"]])`
 
+```{r "load limma"}
+library("limma")
+```
 
 
 # Reproducibility
@@ -106,6 +110,7 @@ The `r Biocpkg("ExampleBiocWorkshop2023")` package `r Citep(bib[["ExampleBiocWor
 * R `r Citep(bib[["R"]])`
 * `r Biocpkg("BiocStyle")` `r Citep(bib[["BiocStyle"]])`
 * `r CRANpkg("knitr")` `r Citep(bib[["knitr"]])`
+* `r Biocpkg("limma")` `r Citep(bib[["limma"]])`
 * `r CRANpkg("RefManageR")` `r Citep(bib[["RefManageR"]])`
 * `r CRANpkg("rmarkdown")` `r Citep(bib[["rmarkdown"]])`
 * `r CRANpkg("sessioninfo")` `r Citep(bib[["sessioninfo"]])`

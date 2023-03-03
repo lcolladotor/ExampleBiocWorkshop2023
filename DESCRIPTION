@@ -22,3 +22,5 @@ Suggests:
     sessioninfo,
     testthat
 VignetteBuilder: knitr
+Imports: 
+    limma
