@@ -333,7 +333,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-
       ## Note that DOCKERHUB_TOKEN is really a token for your dockerhub
       ## account, not your actual dockerhub account password. You can get it
       ## from https://hub.docker.com/settings/security.
