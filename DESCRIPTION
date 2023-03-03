@@ -10,7 +10,7 @@ Description: Live demo using biocthis for making an R/Bioconductor workshop
 License: Artistic-2.0
 URL: https://github.com/lcolladotor/ExampleBiocWorkshop2023
 BugReports: https://support.bioconductor.org/tag/ExampleBiocWorkshop2023
-biocViews: Software, Transcription, Sequencing, RNAseq, GeneExpression
+biocViews: Software, Sequencing, RNAseq
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
