@@ -1,14 +1,24 @@
 Package: ExampleBiocWorkshop2023
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: This is an example Bioconductor workshop package made live in 2023
+Version: 0.99.0
+Date: 2023-03-03
 Authors@R: 
     person("Leonardo", "Collado-Torres", , "lcolladotor@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0003-2140-308X"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: Live demo using biocthis for making an R/Bioconductor workshop
+    package. We made this package on March 3rd, 2023.
+License: Artistic-2.0
+URL: https://github.com/lcolladotor/ExampleBiocWorkshop2023
+BugReports: https://support.bioconductor.org/tag/ExampleBiocWorkshop2023
+biocViews: Software
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-URL: https://github.com/lcolladotor/ExampleBiocWorkshop2023
-BugReports: https://github.com/lcolladotor/ExampleBiocWorkshop2023/issues
+Suggests: 
+    BiocStyle,
+    knitr,
+    RefManageR,
+    rmarkdown,
+    sessioninfo,
+    testthat
+VignetteBuilder: knitr

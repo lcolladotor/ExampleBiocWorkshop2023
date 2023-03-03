@@ -1,0 +1,29 @@
+pkgVer <- function(pkg) {
+    if (!exists("meta") || is.null(meta)) meta <- packageDescription(pkg)
+    ver <- meta$Version
+    paste0('https://github.com/lcolladotor/ExampleBiocWorkshop2023/', pkg, ' - R package version ', ver)
+}
+
+c(
+
+    bibentry(bibtype="manual",
+        title = "Demo Bioconductor package 2023",
+        author = personList(
+            as.person("lcolladotor")
+        ),
+        year = format(Sys.Date(), "%Y"),
+        url = "http://www.bioconductor.org/packages/ExampleBiocWorkshop2023",
+        note = pkgVer('ExampleBiocWorkshop2023'),
+        doi = '10.18129/B9.bioc.ExampleBiocWorkshop2023'
+    ),
+    bibentry(bibtype="article",
+        title = "Demo Bioconductor package 2023",
+        author = personList(
+            as.person("lcolladotor")
+        ),
+        year = format(Sys.Date(), "%Y"),
+        journal = "bioRxiv",
+        doi = "10.1101/TODO",
+        url = "https://www.biorxiv.org/content/10.1101/TODO"
+    )
+)
