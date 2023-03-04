@@ -298,17 +298,13 @@ jobs:
           branch: gh-pages
           folder: docs
 
-      - name: Checkout Repository
-        if: "!contains(github.event.head_commit.message, '/nodocker') && env.run_docker == 'true' && github.ref == 'refs/heads/main' && runner.os == 'Linux' "
-        uses: actions/checkout@v3
-
-      - name: Register repo name
+      - name: Register repo name for Docker
         if: "!contains(github.event.head_commit.message, '/nodocker') && env.run_docker == 'true' && github.ref == 'refs/heads/main' && runner.os == 'Linux' "
         id: reg_repo_name
         run: |
           echo CONT_IMG_NAME=$(echo ${{ github.event.repository.name }} | tr '[:upper:]' '[:lower:]') >> $GITHUB_ENV
 
-      - name: Set up QEMU
+      - name: Set up QEMU for Docker
         if: "!contains(github.event.head_commit.message, '/nodocker') && env.run_docker == 'true' && github.ref == 'refs/heads/main' && runner.os == 'Linux' "
         uses: docker/setup-qemu-action@v2
 
